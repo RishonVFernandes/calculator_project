@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="header">Calculator</div>
+        <input type="text" id="toDisplay">
+        <div class="keys">
+            <div onclick="return addToDisplay('x')">x</div>
+            <div onclick="return addToDisplay('1')">1</div>
+            <div onclick="return addToDisplay('2')">2</div>
+            <div onclick="return addToDisplay('3')">3</div>
+            <div onclick="return addToDisplay('/')">/</div>
+            <div onclick="return addToDisplay('4')">4</div>
+            <div onclick="return addToDisplay('5')">5</div>
+            <div onclick="return addToDisplay('6')">6</div>
+            <div onclick="return addToDisplay('-')">-</div>
+            <div onclick="return addToDisplay('7')">7</div>
+            <div onclick="return addToDisplay('8')">8</div>
+            <div onclick="return addToDisplay('9')">9</div>
+            <div onclick="return addToDisplay('+')" rowspan="3">+</div>
+            <div onclick="return addToDisplay('0')">0</div>
+            <div onclick="return toCancelAll()" style="font-size: 2rem; display:flex; justify-content: center; align-items: center;">AC</div>
+            <div onclick="return toErase()">C</div>
+            <div>.</div>
+            <div>( )</div>
+            <div>%</div>
+            <div onclick="return toCalculate()">=</div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
